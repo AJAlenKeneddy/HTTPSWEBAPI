@@ -1,0 +1,6 @@
+@WEBAPIGMINGENIEROSHTTPS_HostAddress = http://localhost:5221
+
+GET {{WEBAPIGMINGENIEROSHTTPS_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

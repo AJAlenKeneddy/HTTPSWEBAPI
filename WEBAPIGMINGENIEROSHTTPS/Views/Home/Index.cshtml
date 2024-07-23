@@ -1,0 +1,62 @@
+﻿@{
+    ViewData["Title"] = "Inicio";
+}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"]</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="text-center mt-5">
+            <h1 class="text-primary">Bienvenido al sitio web de GM Ingenieros</h1>
+            <p class="lead">Explora nuestras funcionalidades:</p>
+            <div class="row mt-4">
+                <div class="col-md-6">
+                    <button class="btn btn-warning btn-lg">
+                        @Html.ActionLink("Ir al listado de Comprobantes", "IndexComprobantes", "Comprobantes", null, new { @class = "text-black" })
+                    </button>
+                </div>
+                <div class="col-md-6">
+                    <button class="btn btn-warning btn-lg">
+                        <a href="/swagger/index.html" class="text-decoration-none text-dark">Ir a Swagger</a>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <hr class="my-5">
+
+        <div class="row">
+            <div class="col-md-6">
+                <h2>¿Quiénes somos?</h2>
+                <p>Somos una empresa dedicada a...</p>
+                <p>Conoce más <a href="/quienes-somos" class="text-decoration-none">aquí</a>.</p>
+            </div>
+            <div class="col-md-6">
+                <h2>Nuestros servicios</h2>
+                <ul>
+                    <li>Servicio 1</li>
+                    <li>Servicio 2</li>
+                    <li>Servicio 3</li>
+                </ul>
+                <p>Descubre más sobre nuestros servicios <a href="/servicios" class="text-decoration-none">aquí</a>.</p>
+            </div>
+        </div>
+
+        <hr class="my-5">
+
+        <div class="text-center mb-5">
+            <h2>Contacto</h2>
+            <p>Estamos ubicados en...</p>
+            <p>Puedes contactarnos al teléfono...</p>
+            <p>O envíanos un mensaje <a href="/contacto" class="text-decoration-none">aquí</a>.</p>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
