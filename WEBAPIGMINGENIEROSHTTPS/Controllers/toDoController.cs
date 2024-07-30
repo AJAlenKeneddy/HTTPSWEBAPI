@@ -132,6 +132,7 @@ namespace WEBAPIGMINGENIEROSHTTPS.Controllers
 
 
         [HttpPost("Obtener_Las_Tareas/{IdUsuario}")]
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
         public List<toDoList> GetTareas(int IdUsuario)
         {
             // Crear un parámetro para el IdUsuario
@@ -146,7 +147,8 @@ namespace WEBAPIGMINGENIEROSHTTPS.Controllers
 
 
         [HttpPost("Agregar_Tarea/{tarea}/{completado}/{IdUsuario}")]
-        
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+
         public IActionResult AgregarTarea(string tarea, bool completado,int IdUsuario)
         {
             try
@@ -168,6 +170,7 @@ namespace WEBAPIGMINGENIEROSHTTPS.Controllers
 
 
         [HttpPut("ActualizarEstadoTarea/{id}")]
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
         public IActionResult ActualizarEstadoTarea(int id)
         {
             try
@@ -184,7 +187,8 @@ namespace WEBAPIGMINGENIEROSHTTPS.Controllers
         }
 
         [HttpPut("Actualizar_Tarea/{id}/{nuevaTarea}")]
-        
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+
         public IActionResult ActualizarTarea(int id, string nuevaTarea)
         {
             if (string.IsNullOrWhiteSpace(nuevaTarea))

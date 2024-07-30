@@ -12,6 +12,7 @@
 /.vs/
 /bin/
 WEBAPIGMINGENIEROSHTTPS/obj/
+WEBAPIGMINGENIEROSHTTPS/bin
 /.config/
 
 /WEBAPIGMINGENIEROSHTTPS/Controllers/AccesoController.cs
