@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WEBAPIGMINGENIEROSHTTPS")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+843c9618a43afcc9fc289ced95bb4d11e36ee9d9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+67c9d2ae7a7da7b0d5647c68cd5ca72feb0ad3f2")]
 [assembly: System.Reflection.AssemblyProductAttribute("WEBAPIGMINGENIEROSHTTPS")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WEBAPIGMINGENIEROSHTTPS")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

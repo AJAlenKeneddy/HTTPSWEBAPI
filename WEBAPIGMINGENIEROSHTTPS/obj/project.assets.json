@@ -8753,11 +8753,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\User\\source\\repos\\WEB API\\WEBAPIGMINGENIEROSHTTPS\\WEBAPIGMINGENIEROSHTTPS.csproj",
+      "projectUniqueName": "C:\\Users\\User\\Source\\Repos\\HTTPSWEBAPI\\WEBAPIGMINGENIEROSHTTPS\\WEBAPIGMINGENIEROSHTTPS.csproj",
       "projectName": "WEBAPIGMINGENIEROSHTTPS",
-      "projectPath": "C:\\Users\\User\\source\\repos\\WEB API\\WEBAPIGMINGENIEROSHTTPS\\WEBAPIGMINGENIEROSHTTPS.csproj",
+      "projectPath": "C:\\Users\\User\\Source\\Repos\\HTTPSWEBAPI\\WEBAPIGMINGENIEROSHTTPS\\WEBAPIGMINGENIEROSHTTPS.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\User\\source\\repos\\WEB API\\WEBAPIGMINGENIEROSHTTPS\\obj\\",
+      "outputPath": "C:\\Users\\User\\Source\\Repos\\HTTPSWEBAPI\\WEBAPIGMINGENIEROSHTTPS\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
