@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
-namespace AppWebApiGMINGENIEROS.Models
+namespace WEBAPIGMINGENIEROSHTTPS.Models
 {
     public class sp_FiltrarComprobantes
     {

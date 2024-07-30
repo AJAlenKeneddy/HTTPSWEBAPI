@@ -3,10 +3,10 @@ using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Security.Cryptography;
 using System.Text;
-using AppWebApiGMINGENIEROS.Models;
+using WEBAPIGMINGENIEROSHTTPS.Models;
 
 
-namespace AppWebApiGMINGENIEROS.Custom
+namespace WEBAPIGMINGENIEROSHTTPS.Custom
 {
     public class Utilidades
     {
@@ -35,8 +35,8 @@ namespace AppWebApiGMINGENIEROS.Custom
 
             var userClaims = new[]
             {
-    new Claim(ClaimTypes.NameIdentifier, modelo.IdUsuario.ToString()),
-    new Claim(ClaimTypes.Email, modelo.Correo!)
+            new Claim(ClaimTypes.NameIdentifier, modelo.IdUsuario.ToString()),
+            new Claim(ClaimTypes.Email, modelo.Correo!)
     };
             var securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["Jwt:key"]!));
             var credentials = new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256Signature);
@@ -50,7 +50,23 @@ namespace AppWebApiGMINGENIEROS.Custom
             return new JwtSecurityTokenHandler().WriteToken(jwtConfig);
         }
 
+        public string generarJWT(UsuariosTodoList modelo)
+        {
+            var userClaims = new[]
+            {
+        new Claim(ClaimTypes.NameIdentifier, modelo.IdUsuario.ToString()),
+        new Claim(ClaimTypes.Email, modelo.Correo!)
+    };
+            var securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["Jwt:key"]!));
+            var credentials = new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256Signature);
 
+            var jwtConfig = new JwtSecurityToken(
+                claims: userClaims,
+                expires: DateTime.UtcNow.AddMinutes(90),
+                signingCredentials: credentials
+            );
+            return new JwtSecurityTokenHandler().WriteToken(jwtConfig);
+        }
 
     }
 }

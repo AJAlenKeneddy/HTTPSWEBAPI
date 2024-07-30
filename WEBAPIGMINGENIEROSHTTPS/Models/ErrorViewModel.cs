@@ -1,4 +1,4 @@
-﻿namespace AppWebApiGMINGENIEROS.Models
+﻿namespace WEBAPIGMINGENIEROSHTTPS.Models
 {
     public class ErrorViewModel
     {

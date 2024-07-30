@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace AppWebApiGMINGENIEROS.Models
+namespace WEBAPIGMINGENIEROSHTTPS.Models
 {
     public class Sp_FiltrarProveedoresPorRUC
     {

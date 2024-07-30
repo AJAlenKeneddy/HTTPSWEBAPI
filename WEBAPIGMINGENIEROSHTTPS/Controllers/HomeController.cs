@@ -1,9 +1,9 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
-using AppWebApiGMINGENIEROS.Models;
+using WEBAPIGMINGENIEROSHTTPS.Models;
 
-namespace AppWebApiGMINGENIEROS.Controllers
+namespace WEBAPIGMINGENIEROSHTTPS.Controllers
 {
     public class HomeController : Controller
     {

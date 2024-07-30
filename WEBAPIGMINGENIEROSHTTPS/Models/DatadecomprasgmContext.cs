@@ -1,8 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
+using WEBAPIGMINGENIEROSHTTPS.Models;
 
-namespace AppWebApiGMINGENIEROS.Models;
+namespace WEBAPIGMINGENIEROSHTTPS.Models;
 
 public partial class DatadecomprasgmContext : DbContext
 {
@@ -26,6 +27,8 @@ public partial class DatadecomprasgmContext : DbContext
 
     public virtual DbSet<Sp_FiltrarProveedoresPorRUC> Sp_FiltrarProveedoresPorRUCs { get; set; }
     public virtual DbSet<toDoList> ToDoList { get; set; }
+
+    public virtual DbSet<UsuariosTodoList>UsuariosTodoList { get; set; }
 
     
     protected override void OnModelCreating(ModelBuilder modelBuilder)

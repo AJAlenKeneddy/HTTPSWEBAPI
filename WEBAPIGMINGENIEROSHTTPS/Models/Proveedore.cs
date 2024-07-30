@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace AppWebApiGMINGENIEROS.Models;
+namespace WEBAPIGMINGENIEROSHTTPS.Models;
 
 public partial class Proveedore
 {

@@ -1,4 +1,4 @@
-﻿using AppWebApiGMINGENIEROS.Models;
+﻿using WEBAPIGMINGENIEROSHTTPS.Models;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
-namespace AppWebApiGMINGENIEROS.Controllers
+namespace WEBAPIGMINGENIEROSHTTPS.Controllers
 {
     [Route("api/[controller]")]
     
@@ -21,7 +21,7 @@ namespace AppWebApiGMINGENIEROS.Controllers
 
 
         [HttpGet("Obtener_Todos_Los_Comprobantes")]
-        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+        
         public IActionResult GetComprobantes()
         {
             // Aquí puedes usar el token recibido en el parámetro 'token'
@@ -55,6 +55,7 @@ namespace AppWebApiGMINGENIEROS.Controllers
         }
 
         [HttpGet("Filtrar_Un_Comprobante/{id}")]
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
         public IActionResult GetComprobantePorId(string id)
         {
             var comprobante = db.Comprobantes.FirstOrDefault(c => c.Numerodocumento == id);

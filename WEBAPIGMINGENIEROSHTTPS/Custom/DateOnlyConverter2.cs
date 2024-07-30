@@ -1,4 +1,4 @@
-﻿namespace AppWebApiGMINGENIEROS.Custom
+﻿namespace WEBAPIGMINGENIEROSHTTPS.Custom
 {
     using System;
     using System.Text.Json;

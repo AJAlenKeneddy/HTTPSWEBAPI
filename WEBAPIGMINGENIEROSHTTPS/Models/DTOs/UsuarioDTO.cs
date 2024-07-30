@@ -1,4 +1,4 @@
-﻿namespace AppWebApiGMINGENIEROS.Models.DTOs
+﻿namespace WEBAPIGMINGENIEROSHTTPS.Models.DTOs
 {
     public class UsuarioDTO
     {

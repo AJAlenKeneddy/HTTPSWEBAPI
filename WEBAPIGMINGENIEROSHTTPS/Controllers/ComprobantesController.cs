@@ -1,9 +1,9 @@
-﻿using AppWebApiGMINGENIEROS.Models;
+﻿using WEBAPIGMINGENIEROSHTTPS.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
-namespace AppWebApiGMINGENIEROS.Controllers
+namespace WEBAPIGMINGENIEROSHTTPS.Controllers
 {
     
     public class ComprobantesController : Controller
