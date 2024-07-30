@@ -3,3 +3,5 @@
 ################################################################################
 
 /WEBAPIGMINGENIEROSHTTPS/appsettings.json
+/WEBAPIGMINGENIEROSHTTPS/Controllers/AccesoController.cs
+/WEBAPIGMINGENIEROSHTTPS/Program.cs
