@@ -6,6 +6,7 @@ using System.Net.Mail;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Data.SqlClient;
 using WEBAPIGMINGENIEROSHTTPS.Custom;
+using SendGrid.Helpers.Mail;
 
 
 
@@ -211,9 +212,25 @@ namespace WEBAPIGMINGENIEROSHTTPS.Controllers
         }
 
 
-        
+        [HttpDelete("Eliminartarea/{id}")]
+        public async Task<IActionResult> DeleteTarea(int id)
+        {
+            var tarea = await db.ToDoList.FindAsync(id);
+            if (tarea == null)
+            {
+                return NotFound();
+            }
+
+            db.ToDoList.Remove(tarea);
+            await db.SaveChangesAsync();
+
+            return NoContent();
+        }
 
 
 
-}
+
+
+
+    }
 }
